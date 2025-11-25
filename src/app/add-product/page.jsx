@@ -24,34 +24,36 @@ export default function AddCrops() {
 
   // form submit
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const res = await fetch("http://localhost:4000/products", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  });
+    const res = await fetch(
+      "https://early-job-placement-server.vercel.app/products",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
-  const data = await res.json();
+    const data = await res.json();
 
-  if (data.insertedId) {
-    alert("Crop added successfully!");
-    // Reset the form
-    setFormData({
-      name: "",
-      type: "",
-      pricePerUnit: "",
-      unit: "",
-      quantity: "",
-      description: "",
-      location: "",
-      image: "",
-    });
-  }
-};
-
+    if (data.insertedId) {
+      alert("Crop added successfully!");
+      // Reset the form
+      setFormData({
+        name: "",
+        type: "",
+        pricePerUnit: "",
+        unit: "",
+        quantity: "",
+        description: "",
+        location: "",
+        image: "",
+      });
+    }
+  };
 
   return (
     <div className="max-w-3xl mx-auto mt-10 p-6 rounded-xl shadow-lg bg-gradient-to-r from-green-200 via-green-100 to-yellow-100">

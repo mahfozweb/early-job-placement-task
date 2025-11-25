@@ -21,7 +21,7 @@ export default function EditProductPage({ params }) {
 
   // Fetch product data by ID
   useEffect(() => {
-    fetch(`http://localhost:4000/update/${id}`)
+    fetch(`https://early-job-placement-server.vercel.app/update/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.error(err));
@@ -37,11 +37,14 @@ export default function EditProductPage({ params }) {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:4000/update/${id}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(product),
-      });
+      const res = await fetch(
+        `https://early-job-placement-server.vercel.app/update/${id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(product),
+        }
+      );
 
       if (res.ok) {
         alert("Product updated successfully!");

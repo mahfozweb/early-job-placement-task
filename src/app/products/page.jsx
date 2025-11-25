@@ -8,7 +8,7 @@ export default function ProductsPage() {
   console.log(products);
 
   useEffect(() => {
-    fetch("http://localhost:4000/products")
+    fetch("https://early-job-placement-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));

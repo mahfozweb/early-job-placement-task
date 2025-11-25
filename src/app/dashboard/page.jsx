@@ -9,7 +9,7 @@ export default function ProductsTable() {
 
   // Fetch products from API
   useEffect(() => {
-    fetch("http://localhost:4000/products")
+    fetch("https://early-job-placement-server.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));
@@ -23,9 +23,12 @@ export default function ProductsTable() {
     if (!confirm) return;
 
     try {
-      const res = await fetch(`http://localhost:4000/delete/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://early-job-placement-server.vercel.app/delete/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (res.ok) {
         setProducts(products.filter((p) => p._id !== id));
         alert("Product deleted successfully!");

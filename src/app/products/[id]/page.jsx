@@ -5,7 +5,9 @@ export default async function ProductDetails({ params }) {
   console.log("id is ", id);
 
   // Server-side fetch
-  const res = await fetch(`http://localhost:4000/products/${id}`);
+  const res = await fetch(
+    `https://early-job-placement-server.vercel.app/products/${id}`
+  );
   const product = await res.json();
 
   return (
