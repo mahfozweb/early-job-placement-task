@@ -1,6 +1,7 @@
-# 🌿 KrishiLink – Connecting Farmers, Traders & Consumers
+# 🌱 Organic Agriculture Shop
 
-A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights
+Pure, chemical-free farm products grown naturally with care.
+Healthy food for you, better sustainability for our environment.
 
 ## Table of Contents
 
@@ -19,84 +20,106 @@ A Smart Agricultural Marketplace for Buying, Selling, and Sharing Crop Insights
 
 # 📖 About the Project
 
-KrishiLink is a comprehensive agricultural marketplace designed to connect farmers, traders, and consumers.
-It provides a platform where users can upload, manage, and sell their crops, while buyers can browse and request crops in real time.
-The system also offers crop news, farming tips, and best practices to support informed decision-making.
+This project is a modern agriculture-focused platform where customers can easily buy daily crop products directly from local farmers. Farmers can publish and sell their fresh produce, receive weather updates, access soil nutrient insights, and detect pests using AI-powered tools.
+
+The platform also promotes smart irrigation practices, delivers daily agriculture tips, and provides the latest farming-related news—creating a complete digital ecosystem for both farmers and consumers.
 
 # 📖 Project Overview :
 
 ## 🎯 Objective
 
-- Facilitate direct interaction between farmers and buyers
-
-- Help farmers manage their crops efficiently
-
-- Provide reliable updates and insights on crop availability
+The primary objective of this project is to build a trusted digital marketplace where farmers can easily sell their fresh crops, and customers can conveniently buy daily agricultural products at fair prices. Alongside the buying–selling system, the platform also supports farmers with helpful tools like weather updates, soil insights, and modern farming tips to improve productivity
 
 ## 👥 Target Audience
 
-- Small and medium-scale farmers
+- Local Farmers who want to sell their crops directly to customers without middlemen.
 
-- Traders looking to buy crops directly
+- General Customers looking to buy fresh, organic, and fair-priced agricultural products.
 
-- Consumers interested in fresh, local produce
+- New & Small-Scale Farmers who need farming tips, weather updates, soil insights, and modern agricultural guidance.
 
-- Agricultural enthusiasts seeking news and tips
+- Agri-Businesses & Retailers seeking reliable sources of crops and agricultural goods
+- Agriculture Enthusiasts interested in news, trends, and smart-farming technologies.
 
 ## 📊 Key Metrics
 
-- Number of active users (farmers & buyers)
+- Number of Active Farmers using the platform to sell crops.
 
-- Crop uploads and approved requests
+- Daily Active Users (DAU) buying, browsing, and engaging with the app.
 
-- Transactions completed through the platform
+- Total Crop Listings published on the marketplace.
 
-- Engagement with crop news and tips
+- Monthly Transactions (total orders placed and completed).
+
+- Customer Satisfaction Rating based on reviews and feedback.
+
+- Average Delivery Time for purchased crops.
+
+- Repeat Purchase Rate showing customer loyalty.
+
+- Engagement Metrics for farming tips, weather updates, and AI pest detection features.
 
 ## 🚀 Deployment
 
-- The project is deployed on Vercel: [Click here to view](https://vercel.com/mahfozul-hoques-projects/assignment-krishi-server)
+- The project is deployed on Vercel: [Click here to view](https://early-job-placement-task.vercel.app/)
 
 ## ✨ Key Features
 
 1. **Browse Crops & Vegetables**  
-   Effortlessly explore a variety of crops and vegetables uploaded by other users.  
-   Filter by category, price, and care level to quickly find what you need.  
-   Real-time availability ensures accurate stock information.
+   Explore a wide range of crops and vegetables listed by farmers and users.
 
-2. **Upload Your Crops**  
-   Users can easily upload their own crops or vegetables for sale.  
-   Add details like crop name, category, price, quantity, care level, description, and images.  
-   Manage all your uploads efficiently from your dashboard.
+   Filter results by category, price, and availability.
 
-3. **Admin Control for Uploaded Crops**  
-   Each user acts as an admin for their uploaded crops.  
-   Approve or delete incoming requests from other users.  
-   Monitor crop quantity and ensure proper inventory management.
+   Real-time stock information ensures accurate browsing.
+
+2. **Upload & Sell Crops**  
+   Users can upload their own crops with details:
+
+Name, category, price, quantity
+
+Care level, description, and images
+
+Manage uploaded items anytime through the dashboard.
+
+3. **Seller Admin Control**  
+   Each uploader is the admin of their own products.
+
+Approve or decline buyer requests.
+
+Inventory auto-updates when requests are accepted.
 
 4. **Request & Purchase Crops**  
-   Users can send requests to buy crops from others.  
-   Accepting a request automatically reduces the available quantity.  
-   Track the status of your requests in real-time.
+   Buyers can send purchase requests to sellers.
 
-5. **User Authentication**  
-   Secure login and registration system using Firebase Authentication.  
-   Role-based access ensures privacy and control over user data.  
-   Forgot password and reset functionality for seamless account management.
+Sellers can accept or reject requests.
 
-6. **Crop News & Tips**  
-   Access the latest agricultural news and updates.  
-   Get practical farming tips and insights to improve crop yield and quality.
+Quantity reduces automatically upon approval.
 
-7. **User Dashboard**  
-   Manage your uploaded crops, requests, and profile from a single dashboard.  
-   Monitor accepted and pending requests.  
-   Edit or remove crops with ease.
+Users can track all request statuses in real time.
 
-8. **Admin Dashboard (Optional Future Enhancement)**  
-   Comprehensive control over platform management.  
-   View, approve, or manage user requests and uploads.  
-   User management: Add, edit, or deactivate user accounts.
+5. **Secure Authentication**  
+   Firebase Authentication for login, registration, and logout.
+
+Password reset support for smooth account management.
+
+Role-based data access for improved security. 6. **Agriculture News & Daily Tips**  
+Latest agricultural updates from trusted sources.
+
+Daily farming tips to improve productivity.
+
+Learn best practices to increase crop quality. 7. **User Dashboard**  
+Manage uploaded crops, profile, and incoming/outgoing requests.
+
+Edit or delete crop listings easily.
+
+Track accepted, declined, or pending requests.
+
+8. **Admin Dashboard (Future Enhancement)**  
+   View and moderate all user uploads.
+
+Manage user accounts and platform-wide activities.
+
+Analytics and reporting features.
 
 9. **Responsive & Modern Design**  
    Fully responsive UI built with Tailwind CSS and DaisyUI.  
@@ -104,10 +127,13 @@ The system also offers crop news, farming tips, and best practices to support in
    Smooth and intuitive navigation for a seamless user experience.
 
 10. **Deployment & Scalability**  
-    Hosted on **Vercel** for fast, reliable performance.  
-    Built with scalability in mind to handle increasing users and data.  
-    Continuous updates and improvements for enhanced functionality.
-    ## 🛠️ Tech Stack
+    Fully deployed on Vercel for fast global access.
+
+Backend designed to scale with increased users and data.
+
+Continuous improvements and feature updates planned.
+
+## 🛠️ Tech Stack
 
 ### 🎨 Frontend
 
