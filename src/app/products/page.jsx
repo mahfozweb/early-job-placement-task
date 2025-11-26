@@ -26,7 +26,9 @@ export default function ProductsPage() {
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-        {loading == true && <span>Loading....</span>}
+        {loading == true && (
+          <span className="loading loading-dots loading-xl"></span>
+        )}
         {products.map((product) => (
           <div
             key={product._id}
