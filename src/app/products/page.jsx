@@ -4,13 +4,17 @@ import { useRouter } from "next/navigation";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
   console.log(products);
 
   useEffect(() => {
     fetch("https://early-job-placement-server.vercel.app/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data))
+      .then((data) => {
+        setProducts(data);
+        setLoading(false);
+      })
       .catch((err) => console.error(err));
   }, []);
 
@@ -22,6 +26,7 @@ export default function ProductsPage() {
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+        {loading == true && <span>Loading....</span>}
         {products.map((product) => (
           <div
             key={product._id}
