@@ -5,13 +5,17 @@ import { useRouter } from "next/navigation";
 
 export default function ProductsTable() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   // Fetch products from API
   useEffect(() => {
     fetch("https://early-job-placement-server.vercel.app/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data))
+      .then((data) => {
+        setProducts(data);
+        setLoading(false);
+      })
       .catch((err) => console.error(err));
   }, []);
 
@@ -61,6 +65,11 @@ export default function ProductsTable() {
             </tr>
           </thead>
           <tbody className="text-gray-700">
+            {loading == true && (
+              <span className="text-4xl text-blue-800 flex justify-center">
+                Loading....
+              </span>
+            )}
             {products.map((product, index) => (
               <tr
                 key={product._id}
