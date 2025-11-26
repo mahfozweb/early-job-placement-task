@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import FeatureSection from "@/components/FeatureSection";
 import HeroBanner from "@/components/HeroBanner";
 import Image from "next/image";
+//
 
 export default function Home() {
   return (
