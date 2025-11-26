@@ -15,11 +15,11 @@ export default async function ProductDetails({ params }) {
       {/* Main Card */}
       <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row gap-8">
         {/* Left: Large Image */}
-        <div className="md:w-1/2 flex justify-center items-center bg-gray-100 p-6">
+        <div className="md:w-1/2 h-90 flex justify-center items-center bg-gray-100 p-6">
           <img
             src={product.image || "https://via.placeholder.com/400"}
             alt={product.name}
-            className="rounded-2xl object-cover w-full h-full shadow-lg transform hover:scale-105 transition-transform duration-500"
+             className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
           />
         </div>
 
