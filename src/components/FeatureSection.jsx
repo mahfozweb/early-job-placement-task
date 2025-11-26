@@ -5,12 +5,13 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import imag1 from "../../public/marketplace.jpg";
+import imag2 from "../../public/knowledge.jpg";
+import imag3 from "../../public/tech.jpg";
 
 export default function FeatureSection() {
   const slides = [
     {
       category: "Crop Marketplace",
-      bg: "bg-green-100/70",
       image: imag1.src,
       items: [
         {
@@ -32,8 +33,7 @@ export default function FeatureSection() {
     },
     {
       category: "Farm Knowledge",
-      bg: "bg-yellow-100/70",
-      image: "/images/feature-bg.jpg",
+      image: imag2.src,
       items: [
         {
           icon: "💡",
@@ -54,8 +54,7 @@ export default function FeatureSection() {
     },
     {
       category: "Smart Farming Tech",
-      bg: "bg-blue-100/70",
-      image: "/images/feature-bg.jpg",
+      image: imag3.src,
       items: [
         {
           icon: "🤖",
@@ -77,8 +76,10 @@ export default function FeatureSection() {
   ];
 
   return (
-    <div className="w-full px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4 text-green-700">🌿 Features</h1>
+    <div className="w-full px-4 py-10">
+      <h1 className="text-3xl font-bold mb-6 text-green-800">
+        🌿 Featured Sections
+      </h1>
 
       <Swiper
         modules={[Autoplay, Pagination]}
@@ -91,29 +92,34 @@ export default function FeatureSection() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div
-              className={`${slide.bg} p-6 rounded-2xl shadow-lg relative overflow-hidden`}
-            >
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
               {/* Background Image */}
               <div
-                className="absolute inset-0 bg-cover bg-center opacity-30"
+                className="absolute inset-0 bg-cover bg-center scale-105"
                 style={{ backgroundImage: `url(${slide.image})` }}
               ></div>
 
+              {/* Dark Gradient Overlay */}
+              <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
               {/* Content */}
-              <div className="relative z-10">
-                <h2 className="text-xl font-bold mb-4">{slide.category}</h2>
+              <div className="relative z-10 p-7 text-white">
+                <h2 className="text-2xl font-bold mb-5 drop-shadow-lg">
+                  {slide.category}
+                </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {slide.items.map((item, i) => (
                     <div
                       key={i}
-                      className="p-4 bg-white/80 border rounded-xl shadow-sm flex items-start gap-3"
+                      className="p-4 bg-white/20 backdrop-blur-md rounded-xl shadow-lg flex items-start gap-3 border border-white/30"
                     >
                       <span className="text-3xl">{item.icon}</span>
                       <div>
-                        <h3 className="font-semibold text-lg">{item.title}</h3>
-                        <p className="text-sm text-gray-600">{item.desc}</p>
+                        <h3 className="font-semibold text-lg text-white drop-shadow">
+                          {item.title}
+                        </h3>
+                        <p className="text-sm text-gray-100">{item.desc}</p>
                       </div>
                     </div>
                   ))}
