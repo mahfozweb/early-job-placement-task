@@ -27,7 +27,9 @@ export default function ProductsPage() {
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {loading == true && (
-          <span className="text-5xl flex justify-center">Loading....</span>
+          <span className="text-4xl text-blue-800 flex justify-center">
+            Loading....
+          </span>
         )}
         {products.map((product) => (
           <div
