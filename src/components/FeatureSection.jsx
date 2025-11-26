@@ -9,7 +9,8 @@ export default function FeatureSection() {
   const slides = [
     {
       category: "Crop Marketplace",
-      bg: "bg-green-100",
+      bg: "bg-green-100/70",
+      image: "../../public/marketplace.jpg",
       items: [
         {
           icon: "🧑‍🌾",
@@ -30,7 +31,8 @@ export default function FeatureSection() {
     },
     {
       category: "Farm Knowledge",
-      bg: "bg-yellow-100",
+      bg: "bg-yellow-100/70",
+      image: "/images/feature-bg.jpg",
       items: [
         {
           icon: "💡",
@@ -51,7 +53,8 @@ export default function FeatureSection() {
     },
     {
       category: "Smart Farming Tech",
-      bg: "bg-blue-100",
+      bg: "bg-blue-100/70",
+      image: "/images/feature-bg.jpg",
       items: [
         {
           icon: "🤖",
@@ -87,22 +90,33 @@ export default function FeatureSection() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className={`${slide.bg} p-6 rounded-2xl shadow-lg`}>
-              <h2 className="text-xl font-bold mb-4">{slide.category}</h2>
+            <div
+              className={`${slide.bg} p-6 rounded-2xl shadow-lg relative overflow-hidden`}
+            >
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-30"
+                style={{ backgroundImage: `url(${slide.image})` }}
+              ></div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {slide.items.map((item, i) => (
-                  <div
-                    key={i}
-                    className="p-4 bg-white border rounded-xl shadow-sm flex items-start gap-3"
-                  >
-                    <span className="text-3xl">{item.icon}</span>
-                    <div>
-                      <h3 className="font-semibold text-lg">{item.title}</h3>
-                      <p className="text-sm text-gray-600">{item.desc}</p>
+              {/* Content */}
+              <div className="relative z-10">
+                <h2 className="text-xl font-bold mb-4">{slide.category}</h2>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {slide.items.map((item, i) => (
+                    <div
+                      key={i}
+                      className="p-4 bg-white/80 border rounded-xl shadow-sm flex items-start gap-3"
+                    >
+                      <span className="text-3xl">{item.icon}</span>
+                      <div>
+                        <h3 className="font-semibold text-lg">{item.title}</h3>
+                        <p className="text-sm text-gray-600">{item.desc}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </SwiperSlide>
