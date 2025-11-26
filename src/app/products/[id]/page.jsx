@@ -19,7 +19,7 @@ export default async function ProductDetails({ params }) {
           <img
             src={product.image || "https://via.placeholder.com/400"}
             alt={product.name}
-            className="rounded-2xl object-cover w-full h-96 shadow-lg transform hover:scale-105 transition-transform duration-500"
+            className="rounded-2xl object-cover w-full h-full shadow-lg transform hover:scale-105 transition-transform duration-500"
           />
         </div>
 
