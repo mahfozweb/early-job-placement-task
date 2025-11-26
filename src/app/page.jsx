@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import FeatureSection from "@/components/FeatureSection";
+import HeroBanner from "@/components/HeroBanner";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div className=" min-h-screen bg-zinc-50 font-sans px-5">
       <Banner></Banner>
       <FeatureSection></FeatureSection>
+      <HeroBanner></HeroBanner>
     </div>
   );
 }
