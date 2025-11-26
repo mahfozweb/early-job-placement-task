@@ -4,13 +4,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import imag1 from "../../public/marketplace.jpg";
 
 export default function FeatureSection() {
   const slides = [
     {
       category: "Crop Marketplace",
       bg: "bg-green-100/70",
-      image: "../../public/marketplace.jpg",
+      image: imag1.src,
       items: [
         {
           icon: "🧑‍🌾",
