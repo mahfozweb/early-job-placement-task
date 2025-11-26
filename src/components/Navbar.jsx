@@ -1,95 +1,10 @@
-// import Link from "next/link";
-// import React from "react";
-
-// export default function Navbar() {
-//   return (
-//     <div className="flex  bg-blue-300 px-10 text-white font-bold  text-xl">
-//       <div className="flex-1 ">Smart App</div>
-//       <div className="flex-1">
-//         <ul className="flex text-red justify-center gap-5 p-5 ">
-//           <li>
-//             <Link className="" href="/home">
-//               Home
-//             </Link>
-//           </li>
-//           <li>
-//             <Link href="/about">About</Link>
-//           </li>
-
-//           <li>
-//             {" "}
-//             <Link href="/add-product">Add Product</Link>
-//           </li>
-//           <li>
-//             {" "}
-//             <Link href="/add-product">Add Product</Link>
-//           </li>
-//           <li>
-//             <Link href="/auth/login">Login</Link>
-//           </li>
-//           <li>
-//             <Link href="/auth/register">Register</Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
-// "use client";
-// "use client";
-// import Link from "next/link";
-// import { useState } from "react";
-
-// export default function Navbar() {
-//   const user = true; // temporary: assume logged in for testing
-//   const [open, setOpen] = useState(false);
-
-//   return (
-//     <nav className="bg-blue-600 text-white p-4 sticky top-0 z-50">
-//       <div className="container mx-auto flex justify-between items-center">
-//         <div className="text-xl font-bold">
-//           <Link href="/">MyShop</Link>
-//         </div>
-//         <div className="hidden md:flex space-x-4">
-//           <Link href="/">Home</Link>
-//           <Link href="/products">Products</Link>
-//           {user && (
-//             <>
-//               <Link href="/add-product">Add Product</Link>
-//               <Link href="/dashboard">Manage Products</Link>
-//             </>
-//           )}
-//         </div>
-//         <div className="md:hidden">
-//           <button onClick={() => setOpen(!open)}>Menu</button>
-//         </div>
-//       </div>
-//       {open && (
-//         <div className="flex flex-col space-y-2 p-4 md:hidden">
-//           <Link href="/">Home</Link>
-//           <Link href="/products">Products</Link>
-//           {user && (
-//             <>
-//               <Link href="/add-product">Add Product</Link>
-//               <Link href="/dashboard">Manage Products</Link>
-//             </>
-//           )}
-//         </div>
-//       )}
-//     </nav>
-//   );
-// }
-
-/* //////////////////// */
-
-// src/components/Navbar.jsx
-// src/components/Navbar.jsx
 "use client";
 
 import Link from "next/link";
 import { useState } from "react";
 import { useAuth } from "./AuthProvider";
 import { useRouter } from "next/navigation";
+// import Link from "next/link";
 
 export default function Navbar() {
   const { user, logoutUser } = useAuth();
@@ -108,11 +23,19 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 bg-white border-b z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold">
+        {/* <Link href="/" className="text-xl font-bold">
           MyLogo
         </Link>
+        <img src="/logo.jpg" alt="" /> */}
+        <Link href="/" className="flex items-center gap-2">
+          <img
+            src="/logo.jpg"
+            alt="Logo"
+            className="w-20 h-20 object-cover rounded-full" // adjust size as needed
+          />
+        </Link>
 
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden md:flex gap-6 items-center font-semibold text-xl">
           {user ? (
             <>
               <Link href="/">Home</Link>

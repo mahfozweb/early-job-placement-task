@@ -21,10 +21,10 @@ export default function Footer() {
             <a href="/products" className="hover:text-white transition-colors">
               Products
             </a>
-            <a href="/about" className="hover:text-white transition-colors">
+            <a href="#" className="hover:text-white transition-colors">
               About
             </a>
-            <a href="/contact" className="hover:text-white transition-colors">
+            <a href="#" className="hover:text-white transition-colors">
               Contact
             </a>
           </div>

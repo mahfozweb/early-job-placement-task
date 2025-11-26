@@ -1,6 +1,7 @@
 // components/HeroBanner.jsx
 import React from "react";
-import styles from "../styles/herobanner/module.css";
+import styles from "../styles/herobanner/module.module.css";
+
 import Image from "next/image";
 
 const HeroBanner = () => {
@@ -8,7 +9,7 @@ const HeroBanner = () => {
     <div className={styles.heroContainer}>
       {/* Next.js Image Component */}
       <Image
-        src="/banner.jpg" // Directly in public folder
+        src="/herobanner.avif" // Directly in public folder
         alt="Agriculture and Eco Farming Banner"
         fill // makes the image cover the container
         style={{ objectFit: "cover" }} // full-cover
