@@ -234,46 +234,10 @@ Follow the steps below to run **KrishiLink** locally.
 git clone https://github.com/mahfozweb/early-job-placement-task.git
 cd organic-agriculture
 npm install
-# Create Environment File
-# This file will store your backend API URL and Firebase config
-# VITE_apiKey=yourApiKey
-# VITE_authDomain=yourAuthDomain
-# VITE_projectId=yourProjectId
-# VITE_storageBucket=yourStorageBucket
-# VITE_messagingSenderId=yourMessagingSenderId
-# VITE_appId=yourAppId
 
-# VITE_SERVER_URL=http://localhost:4000
-# Run Frontend
 npm run dev
 
 ```
-
-<!--
-# 🗄️ BACKEND SETUP
-
-```bash
-# Open a New Terminal & Navigate to Server Folder
-cd ../server
-# Install Dependencies
-npm install
-# Create Backend .env File
-PORT=4000
-MONGO_URL=yourMongoDBURL
-JWT_SECRET=yourSecretKey
-# Start Backend Server
-npm start
-
-
-``` -->
-
-# 🎉 All Setup Done!
-
-## Your project is now running locally with:
-
-- Frontend: http://localhost:5173
-
-<!-- - Backend: http://localhost:4000 -->
 
 ---
 
@@ -292,5 +256,5 @@ For more details, see the [LICENSE.txt](LICENSE.txt) file included in this repos
 
 ## 📫 Contact
 
-- **🌐 Project Live Link:** [KrishiLink Live Site](https://early-job-placement-task.vercel.app/)
+- **🌐 Project Live Link:** [Organic-agriculture Live Site](https://early-job-placement-task.vercel.app/)
 - **✉️ Email:** [mahfoz81000@gmail.com](mailto:mahfoz81000@gmail.com)
