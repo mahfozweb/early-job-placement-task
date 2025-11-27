@@ -72,7 +72,17 @@ export default function Navbar() {
                 onClick={() => setOpen((s) => !s)}
                 className="flex items-center gap-2 border px-3 py-1 rounded"
               >
-                {user.photoURL ? user.photoURL : user.email}
+                {user.photoURL ? (
+                  <img
+                    src={user.photoURL}
+                    alt="User Photo"
+                    width={32}
+                    height={32}
+                    className="rounded-full"
+                  />
+                ) : (
+                  user.email
+                )}
                 <span>▾</span>
               </button>
 
