@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
       >
         <AuthProvider>
           <Navbar></Navbar>
-          <ProtectedRoute>{children}</ProtectedRoute>
+          {/* <ProtectedRoute></ProtectedRoute> */}
+          {children}
           <Footer></Footer>
         </AuthProvider>
       </body>
