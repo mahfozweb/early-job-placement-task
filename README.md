@@ -144,7 +144,7 @@ Continuous improvements and feature updates planned.
 | **HTML5**        | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/> |
 | **CSS3**         | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>   |
 | **Tailwind CSS** | <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/>          |
-| **React.js**     | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40"/> |
+| **Next.js**      | <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js Logo" width="120"/>       |
 
 </div>
 
@@ -202,13 +202,13 @@ Continuous improvements and feature updates planned.
 
 ### 🖥️ Frontend (Client)
 
-- **React.js** – Frontend library for building UI
-- **React Router DOM** – Client-side routing
+- **Next.js** – Frontend library for building UI
+<!-- - **React Router DOM** – Client-side routing -->
 - **Tailwind CSS** – Utility-first CSS framework for styling
 - **DaisyUI** – Component library for Tailwind
 - **Firebase** – Authentication & cloud services
 - **React Hot Toast** – Notifications
-- **Axios / Fetch API** – For HTTP requests
+- **UseEffect / Fetch API** – For HTTP requests
 
 ### 🗄️ Backend (Server)
 
