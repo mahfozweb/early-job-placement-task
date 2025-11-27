@@ -72,7 +72,7 @@ export default function Navbar() {
                 onClick={() => setOpen((s) => !s)}
                 className="flex items-center gap-2 border px-3 py-1 rounded"
               >
-                {user.displayName ? user.displayName : user.email}
+                {user.photoURL ? user.photoURL : user.email}
                 <span>▾</span>
               </button>
 
