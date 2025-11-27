@@ -75,63 +75,64 @@ The primary objective of this project is to build a trusted digital marketplace 
 2. **Upload & Sell Crops**  
    Users can upload their own crops with details:
 
-Name, category, price, quantity
+   Name, category, price, quantity
 
-Care level, description, and images
+   Care level, description, and images
 
-Manage uploaded items anytime through the dashboard.
+   Manage uploaded items anytime through the dashboard.
 
 3. **Seller Admin Control**  
    Each uploader is the admin of their own products.
 
-Approve or decline buyer requests.
+   Approve or decline buyer requests..
 
-Inventory auto-updates when requests are accepted.
+   Inventory auto-updates when requests are accepted.
 
 4. **Request & Purchase Crops**  
    Buyers can send purchase requests to sellers.
 
-Sellers can accept or reject requests.
+   Sellers can accept or reject requests.
 
-Quantity reduces automatically upon approval.
+   Quantity reduces automatically upon approval.
 
-Users can track all request statuses in real time.
+   Users can track all request statuses in real time.
 
 5. **Secure Authentication**  
    Firebase Authentication for login, registration, and logout.
 
-Password reset support for smooth account management.
+   Password reset support for smooth account management.
 
-Role-based data access for improved security. 6. **Agriculture News & Daily Tips**  
-Latest agricultural updates from trusted sources.
+   Role-based data access for improved security.
+   **Agriculture News & Daily Tips**  
+   Latest agricultural updates from trusted sources.
 
-Daily farming tips to improve productivity.
+   Daily farming tips to improve productivity.
 
-Learn best practices to increase crop quality. 7. **User Dashboard**  
-Manage uploaded crops, profile, and incoming/outgoing requests.
+   Learn best practices to increase crop quality. 7. **User Dashboard**  
+   Manage uploaded crops, profile, and incoming/outgoing requests.
 
-Edit or delete crop listings easily.
+   Edit or delete crop listings easily.
 
-Track accepted, declined, or pending requests.
+   Track accepted, declined, or pending requests.
 
-8. **Admin Dashboard (Future Enhancement)**  
+6. **Admin Dashboard (Future Enhancement)**  
    View and moderate all user uploads.
 
-Manage user accounts and platform-wide activities.
+   Manage user accounts and platform-wide activities.
 
-Analytics and reporting features.
+   Analytics and reporting features.
 
-9. **Responsive & Modern Design**  
+7. **Responsive & Modern Design**  
    Fully responsive UI built with Tailwind CSS and DaisyUI.  
    Optimized for desktop, tablet, and mobile devices.  
    Smooth and intuitive navigation for a seamless user experience.
 
-10. **Deployment & Scalability**  
-    Fully deployed on Vercel for fast global access.
+8. **Deployment & Scalability**  
+   Fully deployed on Vercel for fast global access.
 
-Backend designed to scale with increased users and data.
+   Backend designed to scale with increased users and data.
 
-Continuous improvements and feature updates planned.
+   Continuous improvements and feature updates planned.
 
 ## 🛠️ Tech Stack
 
@@ -230,24 +231,25 @@ Follow the steps below to run **KrishiLink** locally.
 ## 📥 🖥️ FRONTEND SETUP
 
 ```bash
-git clone https://github.com/mahfozweb/assignment-krishi-client.git
-cd krishilink
+git clone https://github.com/mahfozweb/early-job-placement-task.git
+cd organic-agriculture
 npm install
 # Create Environment File
 # This file will store your backend API URL and Firebase config
-VITE_apiKey=yourApiKey
-VITE_authDomain=yourAuthDomain
-VITE_projectId=yourProjectId
-VITE_storageBucket=yourStorageBucket
-VITE_messagingSenderId=yourMessagingSenderId
-VITE_appId=yourAppId
+# VITE_apiKey=yourApiKey
+# VITE_authDomain=yourAuthDomain
+# VITE_projectId=yourProjectId
+# VITE_storageBucket=yourStorageBucket
+# VITE_messagingSenderId=yourMessagingSenderId
+# VITE_appId=yourAppId
 
-VITE_SERVER_URL=http://localhost:4000
+# VITE_SERVER_URL=http://localhost:4000
 # Run Frontend
 npm run dev
 
 ```
 
+<!--
 # 🗄️ BACKEND SETUP
 
 ```bash
@@ -263,7 +265,7 @@ JWT_SECRET=yourSecretKey
 npm start
 
 
-```
+``` -->
 
 # 🎉 All Setup Done!
 
@@ -271,7 +273,7 @@ npm start
 
 - Frontend: http://localhost:5173
 
-- Backend: http://localhost:4000
+<!-- - Backend: http://localhost:4000 -->
 
 ---
 
@@ -290,5 +292,5 @@ For more details, see the [LICENSE.txt](LICENSE.txt) file included in this repos
 
 ## 📫 Contact
 
-- **🌐 Project Live Link:** [KrishiLink Live Site](http://young-romahfoz123d.surge.sh/)
+- **🌐 Project Live Link:** [KrishiLink Live Site](https://early-job-placement-task.vercel.app/)
 - **✉️ Email:** [mahfoz81000@gmail.com](mailto:mahfoz81000@gmail.com)
