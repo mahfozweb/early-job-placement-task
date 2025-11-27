@@ -144,7 +144,7 @@ Continuous improvements and feature updates planned.
 | **HTML5**        | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/> |
 | **CSS3**         | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>   |
 | **Tailwind CSS** | <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/>          |
-| **Next.js**      | <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js Logo" width="120"/>       |
+| **Next.js**      | <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js Logo" width="40"/>        |
 
 </div>
 
@@ -179,12 +179,9 @@ Continuous improvements and feature updates planned.
 
 <div align="left">
 
-| Technology               | Icon                                                                                         |
-| ------------------------ | -------------------------------------------------------------------------------------------- |
-| **Firebase Auth**        | <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="40"/>         |
-| **JWT (JSON Web Token)** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jwt/jwt-plain.svg" width="40"/> |
-
-</div>
+| Technology        | Icon                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| **Firebase Auth** | <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="40"/> |
 
 ---
 
